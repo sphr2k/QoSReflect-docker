@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+     - 50000:50000/udp
+    restart: always
+    dns:
+     - 1.1.1.1
+     - 9.9.9.9
